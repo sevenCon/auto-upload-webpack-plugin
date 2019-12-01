@@ -2,6 +2,32 @@
 
 This is webpack plugin to upload the static resource to server after webpack builded
 
+## install
+
+step 1:
+
+```
+npm install auto-upload-webpack-plugin
+
+// or
+yarn add auto-upload-webpack-plugin
+```
+
+step 2:
+
+```
+// webpack.config.js
+plugins: [
+  new AutoUploadWebpackPlugin({
+    host: 'localhost',
+    user: 'xxxxx',
+    password: 'xxxxxx',
+    remoteDir: '/usr/share/nginx/share/xxxx',
+    localDir: '/.../dist',
+  })
+]
+```
+
 ## usage
 
 ```
