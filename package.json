@@ -1,0 +1,24 @@
+{
+  "name": "auto-upload-webpack-plugin",
+  "version": "1.0.3",
+  "description": "This is webpack plugin to upload the static resource to server after webpack builded",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "webpack --config webpack.config.js",
+    "dev": "node --inspect-brk ftpUploader.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ssh2-sftp-client": "^4.3.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chalk": "^3.0.0",
+    "mocha": "^6.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
